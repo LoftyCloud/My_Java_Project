@@ -1,0 +1,75 @@
+<view class="back">
+  <text class="cuIcon-back lg " bindtap="back"></text>
+  <view class="title">分析结果</view>
+</view>
+
+<view class="top">
+  <text>
+    本次共获取分析数据<text class="key">11483</text>条
+    <text class="top2">分析数据得到了以下结论：</text>
+  </text>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">结论节点</view>
+  <view class="cu-item cur text-cadetblue">
+    <view class="content bg-white shadow-blur">
+      <view>从<text class="key">年龄</text>来看</view>
+      <view>成年人服装销量<text class="key">远高于</text>未成年人</view>
+      <view>其比例大约为<text class="key">9:1</text></view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">品牌</text>来看</view>
+      <view><text class="key">Indian Terrai</text>最受欢迎</view>
+      <view>品牌销量<text class="key">远高于</text>其他品牌</view>
+      <view>销量约是最不受欢迎的品牌的<text class="key">9</text>倍</view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">知名度</text>来看</view>
+      <view><text class="key">知名品牌</text>销量更好</view>
+      <view>其销量比为<text class="key">1:228</text></view>
+      <view>而非知名品牌仅有<text class="key">1:16</text></view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">服装样式</text>来看</view>
+      <view><text class="key">has regular styling</text>样式销量最好</view>
+      <view><text class="key">Blue</text>颜色销量最好</view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">关键词</text>来看</view>
+      <view>涉及这些关键词的服装销量更好</view>
+      <view><text class="key">JEANS,BLUE,SHIRT,</text></view>
+      <view><text class="key">PRINTED,SOLID,</text></view>
+      <view><text class="key">BLACK</text></view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">性别</text>来看</view>
+      <view>两性服装销量<text class="key">略大于</text>女性服装销量<text class="key">远高于</text>男性服装销量</view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">商品图片数量</text>来看</view>
+      <view><text class="key">5张</text>图片介绍商品最为适宜</view>
+    </view>
+  </view>
+  <view class="cu-item text-cadetblue">
+    <view class="content bg-white  shadow-blur">
+      <view>从<text class="key">价格</text>来看</view>
+      <view><text class="key">500-1000</text>价位的服装销量<text class="key">最好</text></view>
+      <view><text class="key">1000-1500</text>价位的服装销量其次</view>
+      <view><text class="key">0-500</text>价位的服装销量第三</view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,62 @@
+/**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 20rpx 0px;
+  justify-content: space-between;
+}
+.nav-title {
+  font-size: 32rpx;
+  font-weight: 300;
+  width: 200rpx;
+  margin-top: 100rpx;
+}
+.nav-name {
+  font-size: 28rpx;
+  text-transform: Capitalize;
+  margin-top: 20rpx;
+  position: relative;
+}
+.nav-li text {
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+  font-size: 52rpx;
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.nav-li {
+  padding: 30rpx;
+  border-radius: 12rpx;
+  width: 45%;
+  height: 43%;
+  margin: 0 1.5% 20rpx;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.text-cadetblue{
+  color: cadetblue;
+}

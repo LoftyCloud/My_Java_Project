@@ -1,0 +1,48 @@
+page{
+  background-color: #f3f3f3;
+}
+
+.back{
+  font-size: 60rpx;
+  padding-top: 12%;
+  padding-bottom: 30rpx;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  color: cadetblue;
+}
+
+.title{
+  margin-top: 1%;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+  color: #414040;
+}
+
+.top {
+  position: absolute;
+  color: #414040;
+  font-size: 32rpx;
+  left: 16%;
+}
+
+.top2 {
+  margin-left: 46rpx;
+}
+
+.key {
+  color: cadetblue;
+  font-size: 48rpx;
+  font-weight: 800;
+}
+
+
+.cu-timeline {
+  background-color: #f3f3f3;
+  margin-top: 20%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}

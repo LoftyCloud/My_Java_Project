@@ -1,0 +1,35 @@
+<view class="back">
+  <text class="cuIcon-back lg " bindtap="back"></text>
+  <view class="title">原始数据</view>
+  <view class="weui-search-bar__box">
+    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+    <input type="text" class="weui-search-bar__input" placeholder="搜索数据"/>
+  </view>
+</view>
+
+<view style="margin-top:15rpx; font-size: large; font-weight: 1000; text-align:center; color:cadetblue">2022年xxx平台服装销售部分数据</view>
+
+<scroll-view class="table" scroll-x="true">
+    <!-- 表头(即第一行) -->
+    <view class="tr">
+        <view class="th_1">服装ID</view>
+        <view class="th_2">服装名</view>
+        <view class="th_3">服装品牌</view>
+        <view class="th_4">适用对象</view>
+        <view class="th_5">价格</view>
+        <view class="th_6">销量</view>
+        <view class="th_7">服装描述</view>
+        <view class="th_8">样式/色调</view>
+    </view>
+    <!-- 表格第二行 -->
+    <view class="tr" wx:for="{{msg}}">
+        <view class="td_1">{{item.productid}}</view>
+        <view class="td_2">{{item.productname}}</view>
+        <view class="td_3">{{item.productbrand}}</view>
+        <view class="td_4">{{item.gender}}</view>
+        <view class="td_5">{{item.price}}</view>
+        <view class="td_6">{{item.numimages}}</view>
+        <view class="td_7">{{item.description}}</view>
+        <view class="td_8">{{item.primarycolor}}</view>
+    </view>
+</scroll-view>

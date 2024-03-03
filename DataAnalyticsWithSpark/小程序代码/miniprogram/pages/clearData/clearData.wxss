@@ -1,0 +1,121 @@
+page{
+  background-color: #f3f3f3;
+}
+
+.back{
+  font-size: 60rpx;
+  padding-top: 12%;
+  padding-bottom: 30rpx;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  color: cadetblue;
+}
+
+.title{
+  margin-top: 1%;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+  color: #414040;
+}
+
+.background{
+  width: 80%;
+  height: 100%;
+  margin-top: 40rpx;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item {
+  margin: 10rpx 20rpx;
+  background-color: #FFFFFF;
+  border-radius: 15rpx;
+  overflow: hidden;
+  font-size: 40rpx;
+}
+ 
+.list-item-hd {
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+ 
+  transition: opacity .3s;
+}
+.list-item-hd-show {
+  opacity: .2;
+}
+.list-title{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.list-item-bd {
+  height: 0;
+  overflow: hidden;
+}
+.list-item-bd-show {
+  height: 820rpx;
+}
+.option-box {
+  opacity: 0;
+  position: relative;
+  background-color: #FFFFFF;
+  line-height: 1.41176471;
+  font-size: 34rpx;
+ 
+  transform: translateY(-50%);
+  transition: .3s;
+}
+.option-box-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+.state-arrow-open {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+ 
+.option {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+ 
+.option:before {
+  content: " ";
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  right: 30rpx;
+  height: 1px;
+  border-top: 1rpx solid #D8D8D8;
+  color: #D8D8D8;
+}
+.option:first-child:before {
+  display: none;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.chart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 800rpx;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

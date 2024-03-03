@@ -1,0 +1,30 @@
+<view class="back">
+  <text class="cuIcon-back lg " bindtap="back"></text>
+  <view class="title">数据图表</view>
+</view>
+<block wx:for-items="{{list}}" wx:key="{{item.id}}">
+  <!-- 列表item -->
+  <view class="list-item">
+    <view id="{{item.id}}" class="list-item-hd {{item.open ? 'list-item-hd-show' : ''}}" bindtap="kindToggle">
+      <view id="icon" class="cuIcon-rank"></view>
+      <view class="list-title">{{item.name}}</view>
+      <view class="text-cadetblue {{item.open ? 'state-arrow-open' : ''}}">▼</view>
+    </view>
+ 
+    <!-- 打开的抽屉item -->
+    <view class="list-item-bd {{item.open ? 'list-item-bd-show' : ''}}" wx:if="{{item.open}}">
+      <view class="option-box {{item.open ? 'option-box-show' : ''}}">
+        <!-- 子选项 -->
+        <block wx:for-items="{{item.options}}" wx:for-item="options" wx:key="*item">
+          <view class="option">
+            <view class="chart">
+              <ec-canvas wx:if="{{item.id !== 4}}" id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{options.ec}}"></ec-canvas>
+              <image wx:if="{{item.id === 4}}" style="height: 800rpx; top: 10rpx" src="cloud://cloud1-0gjzbj7z6a6169bd.636c-cloud1-0gjzbj7z6a6169bd-1309578830/词云.png"></image>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</block>
+

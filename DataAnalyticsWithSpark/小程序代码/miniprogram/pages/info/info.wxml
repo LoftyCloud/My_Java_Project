@@ -1,0 +1,4 @@
+<view class="back">
+  <text class="cuIcon-back lg " bindtap="back"></text>
+  <view class="title">数据说明</view>
+</view>

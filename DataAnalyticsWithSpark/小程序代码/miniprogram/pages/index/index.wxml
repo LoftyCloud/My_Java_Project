@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="view_contain">
+  <!-- 第一部分 -->
+  <view class="view_1">
+    <image class="view_1_image" src="cloud://cloud1-0gjzbj7z6a6169bd.636c-cloud1-0gjzbj7z6a6169bd-1309578830/视觉图.png"></image>
+  </view>
+  <!-- 第二部分 -->
+  <view class="view_2">
+    <view class="view_2_1 padding-xl radius shadow-warp bg-white margin-top nav-list">
+      <navigator open-type="navigate" hover-class='none' url="/pages/{{item.name}}/{{item.url}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key=" ">
+        <view class="nav-title">{{item.title}}</view>
+        <text class='cuIcon-{{item.icon}}'></text>
+      </navigator>
+    </view>
+    <view class="view_tips1 padding-xl radius shadow-warp bg-white margin-top nav-list">
+      <view class="view_currentYearAndMonth">
+        {{currentYearAndMonth}}
+      </view>
+      <view class="view_currentDay">
+        {{currentDay}}
+      </view>
+    </view>
+    <view class="view_tips2 padding-xl radius shadow-warp bg-white margin-top nav-list">
+      <view>
+        <text class="view_tips2_part1 cuIcon-myfill lg">Weclome,</text>
+        <text class="view_tips2_part2">
+        目前获取分析数据<text class="view_tips2_part3 lg">             {{count}}</text>        条
+        </text>
+      </view>
+    </view>
+    <view class="view_2_2 padding-xl radius shadow-warp bg-white margin-top"> 
+      <view class="view_2_2_location">
+        <text class="icon_location cuIcon-shop lg"></text>
+        <text class="selected_shop">{{textPart1}}</text>
+        <view class="select" bindtap="turnBook">切换平台</view>
+      </view>
+    </view>
+    <view class="view_2_3 padding-xl radius shadow-warp bg-white margin-top">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" indicator-active-color='cadetblue' class="swiper">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
+          <swiper-item>
+            <image src="{{item}}" class="slide_image" bindtap="swipclick" />
+        </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>

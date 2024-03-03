@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/clearData/clearData",
+    "pages/info/info",
+    "pages/rawData/rawData",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#5f9ea0",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "resources/tarbar/basics.png",
+        "selectedIconPath": "resources/tarbar/basics_cur.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "resources/tarbar/about.png",
+        "selectedIconPath": "resources/tarbar/about_cur.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
